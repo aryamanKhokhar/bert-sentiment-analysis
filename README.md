@@ -1,22 +1,16 @@
-# bert-sentiment-analysis
-Sentiment analysis of text reviews using BERT transformer model implemented in PyTorch.
+# Bert-Sentiment-Analysis
 
-This project demonstrates how to fine-tune a pre-trained BERT model for sentiment classification on a text review dataset. It covers the full pipeline including:
+**Sentiment analysis of text reviews using a fine-tuned BERT transformer in PyTorch.**
 
-Data loading and preprocessing (text cleaning, tokenization, and encoding)
+This project showcases a complete workflow to build a powerful sentiment classifier using BERT, covering:
 
-Mapping sentiment labels and dataset splitting with stratification
+- **Data preprocessing:** Text cleaning, tokenization, and encoding for BERT input  
+- **Label mapping & dataset splitting:** Stratified train/validation/test splits  
+- **Custom Dataset:** Efficient data batching with a PyTorch Dataset class  
+- **Model design:** BERT backbone with dropout and a classification head  
+- **Training:** Fine-tuning with AdamW optimizer and learning rate scheduling  
+- **Evaluation:** Metrics tracking, loss visualization, and confusion matrix analysis  
+- **Inference:** Making predictions on new reviews with class probabilities  
+- **Model persistence:** Saving and loading the trained model for future use  
 
-Defining a custom PyTorch Dataset class for efficient batching
-
-Model architecture setup with dropout and linear classification layer on top of BERT
-
-Training with AdamW optimizer and learning rate scheduling
-
-Model evaluation using accuracy, loss, and confusion matrix visualization
-
-Making predictions on new text samples with probability scores
-
-Saving and loading the trained model for reuse
-
-This notebook is designed for intermediate users familiar with PyTorch and transformers, and it can be adapted to other text classification tasks.
+Ideal for intermediate PyTorch users looking to apply transformers for NLP classification tasks — easily adaptable to other datasets or text classification problems.
